@@ -1,7 +1,13 @@
-node {
-  stage ('Build') {
-    withMaven {
-      sh "mvn clean verify"
-    } 
-  }
+pipeline {
+    agent any
+    tools {
+        maven 'apache-maven-3.6.3' 
+    }
+    stages {
+        stage('Build') { 
+            steps {
+                sh 'mvn -B -DskipTests clean package' 
+            }
+        }
+    }
 }
