@@ -1,28 +1,18 @@
 pipeline {
     agent any
     tools {
-        maven 'maven-3.6.3' 
+        maven 'apache-maven-3.6.3' 
     }
-
     stages {
-        stage ('Build Stage') {
-
+        stage('Build') { 
             steps {
-                withMaven(maven : 'maven-3.6.3') {
-                    sh 'mvn clean compile'
-                }
+                bat 'mvn -B -DskipTests clean package' 
             }
         }
-
-        stage ('Testing Stage') {
-
-            steps {
-                withMaven(maven : 'maven-3.6.3') {
-                    sh 'mvn test'
-                }
-            }
-        }
-
-
     }
+        stage('Test') {
+            steps {
+                bat 'mvn test'
+            }
+        }
 }
