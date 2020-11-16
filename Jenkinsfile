@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-                bat 'start cmd.exe /c C:\\Users\\Afifa Shareef\\Desktop\\UTSA Assignments\\Fall_2020\\Software_testing\\Project2\\deliverScript.bat' 
+                bat './scripts/deliverScript.bat' 
             }
         }
     }
