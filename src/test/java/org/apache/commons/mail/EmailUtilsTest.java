@@ -10,7 +10,8 @@ public class EmailUtilsTest {
 
 	 @Test
 	    public void testUrlEncoding() throws UnsupportedEncodingException {
-			System.out.println("This is a message from the EmailUtilsTest- testing URL encoding method for to return URL encoded string");
+			System.out.println("fwhxxx -This is a message from the EmailUtilsTest - "
+					+ "testing encodeURL , check if string is satisfies the \"US-ASCII\" charset condition");
 	        assertEquals("fwhadf", EmailUtils.encodeUrl("fwhadf"));
 	        assertEquals("1234567890", EmailUtils.encodeUrl("1234567890"));
 	        assertEquals("Test%20CID", EmailUtils.encodeUrl("Test CID"));

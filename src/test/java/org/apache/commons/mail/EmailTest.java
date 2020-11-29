@@ -19,7 +19,8 @@ public class EmailTest extends TestCase{
 	/* 1.Testing addBcc(String... emails) */
 	@Test
 	public void testAddBcc() throws EmailException {
-		System.out.println("This is a message from the Emai test- testing addBcc Method");
+		System.out.println("fwhxxx - This is a message from the Email test- testing addBcc Method"
+				+ "");
 		testEmail.addBcc(SAMPLE_EMAILS);
 		for (int i = 0; i < SAMPLE_EMAILS.length; i++) {
 			assertEquals("Bcc email address ", SAMPLE_EMAILS[i], testEmail.getBccAddresses().get(i).toString());
@@ -29,7 +30,8 @@ public class EmailTest extends TestCase{
 	/* testing addBcc method for empty array of emails */
 	@Test
 	public void testAddBccArrayLength() throws EmailException {
-		System.out.println("This is a message from the Email test- testing addBcc Method for empty Emails");
+		System.out.println("fwhxxx- This is a message from the Email test- testing addBcc Method for empty array of Emails"
+				+ "An email exception is thrown if the email array is empty");
 		final String[] SAMPLE_EMAILS = {};
 		try {
 			testEmail.addBcc(SAMPLE_EMAILS);
@@ -43,7 +45,7 @@ public class EmailTest extends TestCase{
 	/* testing addBcc method null */
 	@Test
 	public void testAddBccNull() throws EmailException {
-		System.out.println("This is a message from the Email test- testing addBcc Method for null emails");
+		System.out.println("fwhxxx- This is a message from the Email test- testing addBcc Method for null emails");
 		final String[] SAMPLE_EMAILS = null;
 		try {
 			testEmail.addBcc(SAMPLE_EMAILS);
@@ -56,7 +58,7 @@ public class EmailTest extends TestCase{
 	
 	@Test
 	public void testAddHeaderEmptyName() throws IllegalArgumentException {
-		System.out.println("This is a message from the Email test- testing AddHeader Method for empty Name");
+		System.out.println("fwhxxx- This is a message from the Email test- testing AddHeader Method for empty Name");
 		try {
 			testEmail.addHeader("", "mailvalue");
 			fail("Failed to throw Illegal Argument exception");
@@ -68,7 +70,7 @@ public class EmailTest extends TestCase{
 	
 	@Test
 	public void testAddHeaderEmptyValue() throws Exception {
-		System.out.println("This is a message from the Email test- testing AddHeader Method for empty Value");
+		System.out.println("fwhxxx- This is a message from the Email test- testing AddHeader Method for empty Value");
 		try {
 			testEmail.addHeader("mailer", "");
 			fail("Failed to throw Illegal Argument exception");
