@@ -1,4 +1,5 @@
 package org.apache.commons.mail;
+import org.apache.commons.mail.EmailAttachment;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,6 +8,8 @@ import java.net.URL;
 import javax.mail.MessagingException;
 
 import org.junit.Test;
+
+
 
 public class EmailAttachmentTest {
 	
