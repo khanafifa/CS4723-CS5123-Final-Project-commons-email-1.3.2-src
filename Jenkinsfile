@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment{
-    	C:\Program Files\apache-maven-3.6.3
+    	./Program Files/apache-maven-3.6.3
     }
     stages {
         stage('Build Stage') {
