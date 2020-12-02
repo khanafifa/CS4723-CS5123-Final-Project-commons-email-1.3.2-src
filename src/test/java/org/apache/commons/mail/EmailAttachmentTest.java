@@ -23,8 +23,8 @@ public class EmailAttachmentTest {
 	@Test
 	public void testgetDescription() throws Exception {
 		System.out.println("fwhxxx- This is a message from the EmailAttachmentTest- testing getDescription()");
-		testAttachment.setDescription("This is a test attachment");
-		assertEquals("This is a test attachment", testAttachment.getDescription());
+		testAttachment.setDescription("Test attachment");
+		assertEquals("Test attachment", testAttachment.getDescription());
 	}
 	@Test
 	public void testgetURL() throws Exception {	
