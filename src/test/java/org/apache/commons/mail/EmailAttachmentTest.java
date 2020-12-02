@@ -16,19 +16,19 @@ public class EmailAttachmentTest {
 	}
 	@Test
 	public void testgetname() throws Exception {
-		System.out.println("This is the test for setName() method.");
-		testAttachment.setName("photo.jpg");	
-		assertEquals("photo.jpg", testAttachment.getName());
+		System.out.println("fwhxxx- This is a message from the EmailAttachmentTest- testing getName()  for proper attachement name");
+		testAttachment.setName("attachment.jpg");	
+		assertEquals("attachment.jpg", testAttachment.getName());
 	}
 	@Test
 	public void testgetDescription() throws Exception {
-		System.out.println("This is the test for setDescription() method.");
+		System.out.println("fwhxxx- This is a message from the EmailAttachmentTest- testing getDescription()");
 		testAttachment.setDescription("This is a test attachment");
 		assertEquals("This is a test attachment", testAttachment.getDescription());
 	}
 	@Test
-	public void testgeturl() throws Exception {	
-		System.out.println("This is the test for setURL() method.");
+	public void testgetURL() throws Exception {	
+		System.out.println("fwhxxx- This is a message from the EmailAttachmentTest- testing getURL()");
 		URL myURL = new URL("http://example.com/");
 		testAttachment.setURL(myURL);	
 		assertEquals(myURL, testAttachment.getURL());
