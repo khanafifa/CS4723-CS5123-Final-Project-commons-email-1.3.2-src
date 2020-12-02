@@ -15,14 +15,6 @@ public class EmailAttachmentTest {
 		testAttachment = new EmailAttachment();
 	}
 	@Test
-	public void testgetPath() throws Exception {
-		System.out.println("lgy__");
-		System.out.println("Class Name: EmailAttachmentTest");
-		System.out.println("This is the test for setPath() method.");
-		testAttachment.setPath("//test//");	
-		assertEquals("//test//",testAttachment.getPath());
-	}
-	@Test
 	public void testgetname() throws Exception {
 		System.out.println("This is the test for setName() method.");
 		testAttachment.setName("photo.jpg");	
@@ -41,12 +33,7 @@ public class EmailAttachmentTest {
 		testAttachment.setURL(myURL);	
 		assertEquals(myURL, testAttachment.getURL());
 	}
-	@Test
-	public void testgetDisposition() throws Exception {	
-		System.out.println("This is the test for setDisposition() method.");
-		testAttachment.setDisposition("Test");	
-		assertEquals("Test", testAttachment.getDisposition());
-	}
+
 	
 	
 	
